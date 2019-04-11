@@ -1,0 +1,18 @@
+create database xamp;
+use xamp;
+
+create table contatos(
+id_contatos int not null auto_increment,
+nome varchar(50),
+endereco varchar(100),
+telefone varchar(11),
+primery key(id_contatos));
+
+create table usuario(
+id_usuario int not null auto_increment,
+login varchar(30),
+senha varchar(30),
+primary key(id_usuario));
+
+insert into usuario(id_usuario,login,senha)values(1,'usuario',456);
+
